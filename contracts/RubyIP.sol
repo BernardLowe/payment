@@ -21,9 +21,9 @@ contract RubyIP {
         uint256 b;
     }
 
-    function verifyInnerProduct(Utils.G1Point[] memory hs, Utils.G1Point memory u, Utils.G1Point memory P, Proof memory proof, uint256 salt) public view returns (bool) {
+    function verifyInnerProduct(Utils.G1Point[] calldata _hs, Utils.G1Point memory u, Utils.G1Point memory P, Proof memory proof, uint256 salt) public view returns (bool) {
         Statement memory statement;
-        statement.hs = hs;
+        statement.hs = _hs;
         statement.u = u;
         statement.P = P;
 

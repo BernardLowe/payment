@@ -56,7 +56,7 @@ contract RubyTransfer {
         RubyIP.Proof ipProof;
     }
 
-    constructor(address _ip) public {
+    constructor(address _ip) {
         ip = RubyIP(_ip);
     }
 

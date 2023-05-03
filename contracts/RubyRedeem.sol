@@ -36,7 +36,7 @@ contract RubyRedeem {
         RubyIP.Proof ip_proof;
     }
 
-    constructor(address _ip) public {
+    constructor(address _ip) {
         ip = RubyIP(_ip);
     }
 
